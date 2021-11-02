@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- reset -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- custom -->
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Base</title>
+</head>
+<body>
+    <script>
+        document.documentElement.style.webkitTouchCallout = 'none';
+        </script>
+        <style>
+        .swipe-block{
+            position:relative;
+            top:50px;
+            left:50px;
+            width:200px;
+            height:140px;
+            background-color:#81d096;
+            border:solid 1px #808080;
+            text-align:center;
+            box-shadow:2px 2px 2px #bebebe;
+        }
+        </style>
+         
+        <div class="container" id="holder">
+            <div class="swipe-area" id="swipe-area">
+                <div class="swipe-block" id="text1">
+                    Swipe me!
+                </div>
+                <div class="swipe-block" id="text1">
+                    Swipe me!
+                </div>
+            </div>
+        </div>
+         
+        <script>
+            var element = document.getElementById("swipe-area");
+         
+            var hammertime = $(element).hammer();
+            hammertime.on("swipeleft dragleft", ".swipe-block", function(ev) {
+            ev.gesture.preventDefault();
+            $("#text1").html("<-swipeleft");
+        });
+        hammertime.on("swiperight dragright", ".swipe-block", function(ev) {
+            ev.gesture.preventDefault();
+            $("#text1").html("swiperight->");
+        });
+        </script>
+    
+    
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>

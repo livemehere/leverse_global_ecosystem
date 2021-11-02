@@ -2,9 +2,108 @@
   font-family: "Poppins", sans-serif;
 }
 
+.wrap {
+  /* width 100당 옆으로 슬라이드되는 화면 갯수  */
+  width: 400vw;
+  height: 100vh;
+  transition: transform 500ms;
+  overflow-x: hidden;
+}
+
+.screen {
+  height: 100%;
+  width: 100vw;
+  overflow: auto;
+  float: left;
+}
+
 .welcome-bg {
   background-image: url("../img/welcome_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+}
+
+.text-box {
+  color: white;
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+
+.text-box h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.text-box h2 {
+  margin-bottom: 3rem;
+}
+
+.text-box p {
+  max-width: 60%;
+  line-height: 2rem;
+}
+
+.begin-btn {
+  color: white;
+  margin-left: 1rem;
+  margin-top: 15rem;
+  font-size: 1.2rem;
+}
+
+.begin-btn p,
+.begin-btn img {
+  display: inline-block;
+}
+
+/* page2 */
+
+.page2 h1 {
+  color: #4e5053;
+}
+
+.page2 img {
+  display: block;
+  margin: auto;
+}
+
+.page2 p {
+  color: #727376;
+  width: 90%;
+  margin-top: 4rem;
+  margin-left: 1rem;
+  line-height: 2rem;
+}
+
+.dot-box {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #dddddd;
+  border-radius: 50%;
+  margin: 2rem 0.2rem;
+}
+
+.selected {
+  background-color: #b643d5;
+}
+
+.next-btn {
+  width: 90%;
+  display: block;
+  margin: auto;
+  background: radial-gradient(
+    360.83% 360.83% at -62.81% -190%,
+    #fb72ad 0%,
+    #b643d5 100%
+  );
+  height: 3.2rem;
+  border-radius: 10px;
+  color: white !important;
+  font-weight: 700;
+  font-size: 1.2rem;
 }

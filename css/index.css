@@ -2,6 +2,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 .wrap {
   /* width 100당 옆으로 슬라이드되는 화면 갯수  */
   width: 400vw;
@@ -13,6 +17,19 @@
 .screen {
   height: 100%;
   width: 100vw;
+  overflow: auto;
+  float: left;
+}
+
+.wrap_description {
+  width: 300vw;
+  height: 70vh;
+  overflow-x: hidden;
+}
+
+.description {
+  width: 100vw;
+  height: 70vh;
   overflow: auto;
   float: left;
 }
@@ -65,6 +82,7 @@
 .page2 img {
   display: block;
   margin: auto;
+  height: 30vh;
 }
 
 .page2 p {

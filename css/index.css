@@ -1,0 +1,10 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.welcome-bg {
+  background-image: url("../img/welcome_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}

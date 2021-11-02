@@ -6,30 +6,34 @@
   visibility: hidden;
 }
 
+.view {
+  width: 100vw;
+  overflow: hidden;
+}
+
 .wrap {
   /* width 100당 옆으로 슬라이드되는 화면 갯수  */
-  width: 400vw;
+  width: 200vw;
   height: 100vh;
   transition: transform 500ms;
-  overflow-x: hidden;
 }
 
 .screen {
   height: 100%;
   width: 100vw;
-  overflow: auto;
+  overflow: hidden;
   float: left;
 }
 
 .wrap_description {
   width: 300vw;
-  height: 70vh;
+  height: 80vh;
   overflow-x: hidden;
 }
 
 .description {
   width: 100vw;
-  height: 70vh;
+  height: 80vh;
   overflow: auto;
   float: left;
 }
@@ -93,7 +97,7 @@
   line-height: 2rem;
 }
 
-.dot-box {
+/* .dot-box {
   display: flex;
   justify-content: center;
 }
@@ -104,7 +108,7 @@
   background-color: #dddddd;
   border-radius: 50%;
   margin: 2rem 0.2rem;
-}
+} */
 
 .selected {
   background-color: #b643d5;
@@ -113,7 +117,7 @@
 .next-btn {
   width: 90%;
   display: block;
-  margin: auto;
+  margin: 0 auto;
   background: radial-gradient(
     360.83% 360.83% at -62.81% -190%,
     #fb72ad 0%,
@@ -124,4 +128,8 @@
   color: white !important;
   font-weight: 700;
   font-size: 1.2rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #b643d5;
 }

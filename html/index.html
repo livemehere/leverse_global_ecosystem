@@ -10,6 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- bootstrap -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <!-- reset -->
     <link rel="stylesheet" href="../css/reset.css">
     <!-- custom -->
@@ -17,59 +22,61 @@
     <title>Wellcome</title>
 </head>
 <body>
-    <div class="wrap">
-        <!-- 1page -->
-        <div class="screen welcome-bg">
-            <div class="text-box">
-                <h1>WELCOME</h1>
-                <h2>To the wallet</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            </div>
-            <div class="begin-btn">
-                <p>Let's begin</p>
-                <img src="../img/arrow.svg" alt="">
-            </div>
-        </div>
-        <!-- 2page -->
-        <div class="screen page2">
-            <div class="wrap_description">
-                <div class="description desc-1">
-                    <div class="text-box">
-                        <h1>Quick</h1>
-                        <h1 class="mb-5">and easy</h1>
-                    </div>
-                    <img src="../img/Illutration1.svg" alt="">
-                    <p>Just visit any of the growing number of outlets who accept money and make your purchase within second</p>
+    <div class="view">
+        <div class="wrap">
+            <!-- 1page -->
+            <div class="screen welcome-bg">
+                <div class="text-box">
+                    <h1>WELCOME</h1>
+                    <h2>To the wallet</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 </div>
-                <div class="description desc-2">
-                    <div class="text-box">
-                        <h1>Investerment</h1>
-                        <h1 class="mb-5">effectives</h1>
-                    </div>
-                    <img src="../img/Illutration2.svg" alt="">
-                    <p>We constantly updated currency market, exchange rates,...</p>
-                </div>
-                <div class="description desc-3">
-                    <div class="text-box">
-                        <h1>Security</h1>
-                        <h1 class="hidden mb-5">A</h1>
-                    </div>
-                    <img src="../img/Illutration3.svg" alt="">
-                    <p>Your money is protected by your login credentials</p>
+                <div class="begin-btn">
+                    <p>Let's begin</p>
+                    <img src="../img/arrow.svg" alt="">
                 </div>
             </div>
-            <div class="dot-box">
-                <div class="dot selected"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
+            <!-- 2page -->
+            <div class="screen page2">
+                <div class="swiper mySwiper">
+                    <div class="wrap_description swiper-wrapper">
+                        <div class="description desc-1 swiper-slide">
+                            <div class="text-box">
+                                <h1>Quick</h1>
+                                <h1 class="mb-5">and easy</h1>
+                            </div>
+                            <img src="../img/Illutration1.svg" alt="">
+                            <p>Just visit any of the growing number of outlets who accept money and make your purchase within second</p>
+                        </div>
+                        <div class="description desc-2 swiper-slide">
+                            <div class="text-box">
+                                <h1>Investerment</h1>
+                                <h1 class="mb-5">effectives</h1>
+                            </div>
+                            <img src="../img/Illutration2.svg" alt="">
+                            <p>We constantly updated currency market, exchange rates,...</p>
+                        </div>
+                        <div class="description desc-3 swiper-slide">
+                            <div class="text-box">
+                                <h1>Security</h1>
+                                <h1 class="hidden mb-5">A</h1>
+                            </div>
+                            <img src="../img/Illutration3.svg" alt="">
+                            <p>Your money is protected by your login credentials</p>
+                        </div>
+                    </div>
+                    <div class="dot-box swiper-pagination mt-2"></div>
+                </div>
+                <button class="btn next-btn">Get Started</button>
             </div>
-            <button class="btn next-btn">Get Started</button>
         </div>
     </div>
+    
 
     
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="../js/index.js"></script>
 </body>
 </html>

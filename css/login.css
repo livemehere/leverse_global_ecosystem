@@ -1,3 +1,93 @@
+input::placeholder {
+  color: #d0d0d0 !important;
+}
+.login-page1 {
+  position: relative;
+}
+
+.login-page1 input {
+  margin-left: 1rem;
+}
+
 .text-box {
   color: #4e5053;
+  margin-left: 1.6rem;
+}
+
+.form-control {
+  width: 90%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #b9b9b96c;
+}
+
+.password-wrap {
+  position: relative;
+}
+
+.password-wrap img {
+  position: absolute;
+  right: 1.2rem;
+  bottom: 0.6rem;
+}
+
+.forgot-btn {
+  float: right;
+  color: #727376;
+}
+
+.forgot-btn::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.login-btn {
+  width: 90%;
+  display: block;
+  margin: auto;
+  opacity: 0.6;
+  border-radius: 10px !important;
+  height: 3.2rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1.3rem;
+  background: radial-gradient(
+    360.83% 360.83% at -62.81% -190%,
+    #fb72ad 0%,
+    #b643d5 100%
+  );
+}
+
+.login-bg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.login-page1 p {
+  color: #b9b9b9;
+  text-align: center;
+}
+
+.finter-btn {
+  display: block;
+  margin: auto;
+  opacity: 0.5;
+  transition: all 300ms;
+}
+
+.finter-btn:hover {
+  opacity: 1;
+}
+
+footer {
+  /* display: block; */
+  margin-top: 12rem;
+}
+
+.login-page1 footer p {
+  z-index: 10;
+  color: white;
 }

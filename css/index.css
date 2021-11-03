@@ -39,6 +39,7 @@
   /* height: 100%; */
   overflow: auto;
   float: left;
+  margin-bottom: 5rem;
 }
 
 .welcome-bg {

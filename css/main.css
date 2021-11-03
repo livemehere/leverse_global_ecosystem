@@ -147,7 +147,8 @@
   width: 100%;
   height: 400px;
   z-index: -2;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .no-transaction-notice {

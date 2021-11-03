@@ -9,13 +9,16 @@
 .view {
   width: 100vw;
   overflow: hidden;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 .wrap {
   /* width 100당 옆으로 슬라이드되는 화면 갯수  */
   width: 200vw;
-  height: 100vh;
+  height: 100%;
   transition: transform 500ms;
+  position: relative;
 }
 
 .screen {
@@ -27,13 +30,13 @@
 
 .wrap_description {
   width: 300vw;
-  height: 80vh;
+  /* height: 80vh; */
   overflow-x: hidden;
 }
 
 .description {
   width: 100vw;
-  height: 100%;
+  /* height: 100%; */
   overflow: auto;
   float: left;
 }
@@ -86,7 +89,7 @@
 .page2 img {
   display: block;
   margin: auto;
-  height: 30vh;
+  /* height: 30vh; */
 }
 
 .page2 p {
@@ -97,27 +100,14 @@
   line-height: 2rem;
 }
 
-/* .dot-box {
-  display: flex;
-  justify-content: center;
-}
-
-.dot {
-  width: 8px;
-  height: 8px;
-  background-color: #dddddd;
-  border-radius: 50%;
-  margin: 2rem 0.2rem;
-} */
-
 .selected {
   background-color: #b643d5;
 }
 
 .next-btn {
-  width: 90%;
+  width: 90vw;
   display: block;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   background: radial-gradient(
     360.83% 360.83% at -62.81% -190%,
     #fb72ad 0%,
@@ -128,6 +118,9 @@
   color: white !important;
   font-weight: 700;
   font-size: 1.2rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 3%;
 }
 
 .swiper-pagination-bullet-active {

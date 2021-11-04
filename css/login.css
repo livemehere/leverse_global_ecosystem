@@ -1,3 +1,12 @@
+a {
+  text-decoration: none;
+  color: #a0a0a0;
+}
+
+a:hover {
+  color: #a0a0a0;
+}
+
 input::placeholder {
   color: #d0d0d0 !important;
 }

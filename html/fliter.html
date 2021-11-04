@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- reset -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- custom -->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/transaction_history.css">
+    <title>transaction history</title>
+</head>
+<body>
+    <div class="view">
+        <div class="wrap">
+            <div class="screen forgot-pwd-1">
+                <img id="path" src="" >
+                <div class="text-box">
+                    <h1 class="mb-4">Filter</h1>
+                </div>
+                <p id="clean-description">From date</p>
+
+                <div class="card filter-card">
+                    <p class="from-date">12/02/2018</p>
+                    <img src="../img/Calender.svg" alt="" style="width:1.3rem">
+                </div>
+
+                <p id="clean-description">To date</p>
+                <div class="card filter-card">
+                    <p class="from-date">12/02/2018</p>
+                    <img src="../img/Calender.svg" alt="" style="width:1.3rem">
+                </div>
+                <p id="clean-description">Amount of money</p>
+                <input type="range" class="form-range" id="money-rage" min="10" max="10000">
+                <div class="rage-text mt-2">
+                    <div class="ms-3">$10</div>
+                    <div class="me-3">over $10,000</div>
+                </div>
+                
+                    <button class="btn apply-btn apply-btn mt-5">Apply</button>
+                </form>
+        </div>
+    </div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/transaction_history.js"></script>
+</body>
+</html>

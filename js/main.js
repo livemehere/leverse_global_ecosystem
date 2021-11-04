@@ -117,6 +117,13 @@ transactionData.forEach((transaction) => {
   $(".transaction-list").append(transactionComponent);
 });
 
+// 불러온 transactionData 가 없을때, 없는 알림창 뜨게하기
+if (transactionData.length == 0) {
+  $(".no-transaction-notice").css("display", "flex");
+} else {
+  $(".no-transaction-notice").css("display", "none");
+}
+
 // UI 디자인 때문에 추가한 박스(건들지 말아주세요)
 const sizeBoxComponent = `
 <div class="transaction-number empty-box">

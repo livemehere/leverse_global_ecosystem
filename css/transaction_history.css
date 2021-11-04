@@ -196,3 +196,41 @@ input[type="range"]::after {
   font-size: 1.3rem;
   background: linear-gradient(162.1deg, #faabb2 -180.26%, #ea4b63 243.53%);
 }
+
+.mymodal {
+  background-color: rgba(0, 0, 0, 0.171);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: #727376;
+}
+
+.ask-box {
+  width: 70%;
+  height: 10rem;
+  background: #ffffff;
+  box-shadow: 9px 10px 18px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+
+.ask-btn {
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+}
+
+.ask-box-text {
+  height: 70%;
+  text-align: center;
+  line-height: 7rem;
+  border-bottom: 1px solid #cccccc;
+}
+
+.ask-button-box {
+}

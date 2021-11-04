@@ -68,3 +68,16 @@ $(".filter-btn").click(function () {
 $(".apply-btn").click(function () {
   $(".wrap").css("transform", "translateX(0)");
 });
+
+$(".clear-all-btn").click(function () {
+  $(".mymodal").css("display", "flex");
+});
+
+// clear all history 버튼을 눌렀을떄, 보이는 모달창 버튼에 따라서 동작하는 것들을 각각 작성하시면 됩니다
+$(".cancel-btn").click(function () {
+  $(".mymodal").css("display", "none");
+});
+
+$(".clear-btn").click(function () {
+  $(".mymodal").css("display", "none");
+});

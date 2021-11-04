@@ -72,6 +72,21 @@ cardData.forEach((card) => {
 ### transaction 생성 부분
 
 ```js
+let transactionData = [
+  {
+    title: "Receive money",
+    from: "Harry James",
+    money: "+ $1,000",
+    date: "09/10",
+  },
+  {
+    title: "Receive money",
+    from: "Harry James",
+    money: "+ $900",
+    date: "09/10",
+  },
+];
+
 transactionData.forEach((transaction) => {
   let transactionComponent = `
   <div class="transaction ms-3 me-3 mb-4">

@@ -93,8 +93,10 @@ input::placeholder {
 }
 
 footer {
-  /* display: block; */
-  margin-top: 12rem;
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .login-page1 footer p {

@@ -39,6 +39,8 @@ select {
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #b9b9b96c;
+  max-width: 100px;
+  background-color: transparent;
 }
 
 .signup-1 p {
@@ -79,7 +81,7 @@ select {
 }
 
 .signup-3 .country-code {
-  background-color: #d0d0d0;
+  background-color: #eeeeee;
   padding: 0.8rem;
   text-align: center;
 }

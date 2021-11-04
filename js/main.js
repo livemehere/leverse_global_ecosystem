@@ -143,3 +143,10 @@ var swiper = new Swiper(".swiper-container", {
     el: ".swiper-pagination",
   },
 });
+
+// 사용자 프로필
+// 사용자 로그인정보에서 이름 가져와서 userName에 넣으시면 됩니다.
+
+let userName = "Choi";
+
+$(".user-name").html(`HI, ${userName} !`);

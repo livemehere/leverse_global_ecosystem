@@ -106,7 +106,7 @@ let transactionData = [
 
 transactionData.forEach((transaction) => {
   let transactionComponent = `
-  <div class="transaction ms-3 me-3 mb-4">
+  <div class="transaction ms-3 me-3 mt-2">
     <div class="transaction-content">
         <h1>${transaction.title}</h1>
         <h2>${transaction.from}</h2>
@@ -141,7 +141,7 @@ $(".transaction-list").append(sizeBoxComponent);
 //  swiper (최하단에 위치하게 해야 동작합니다)
 var swiper = new Swiper(".swiper-container", {
   slidesPerView: "auto",
-  spaceBetween: 1,
+  spaceBetween: 2,
   centeredSlides: true,
   pagination: {
     el: ".swiper-pagination",
@@ -154,3 +154,22 @@ var swiper = new Swiper(".swiper-container", {
 let userName = "Choi";
 
 $(".user-name").html(`HI, ${userName} !`);
+
+// 메뉴바
+let isSidebarOpen = false;
+$(".setting-btn").click(function () {
+  $(".side-bar").css("transform", "translateX(0vw)");
+  $(".view").css("transform", "translateX(60vw)");
+  isSidebarOpen = true;
+});
+
+const sideBarViewPort = document.querySelector(".side-bar");
+
+let mc = new Hammer(sideBarViewPort);
+mc.on("panleft panright tap press", (ev) => {
+  if (isSidebarOpen == true && ev.deltaX < -50) {
+    $(".side-bar").css("transform", "translateX(-60vw)");
+    $(".view").css("transform", "translateX(0vw)");
+    isSidebarOpen = false;
+  }
+});

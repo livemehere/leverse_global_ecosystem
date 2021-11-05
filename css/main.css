@@ -1,5 +1,9 @@
-body {
-  display: flex;
+.view {
+  transition: transform 700ms;
+}
+.when-sidebar-open {
+  width: 100vw;
+  overflow: hidden;
 }
 
 .profile-bar {
@@ -139,6 +143,10 @@ body {
   margin: 0 0.5rem;
 }
 
+.function-container > h1 {
+  margin-bottom: 4.5vh;
+}
+
 .function-card h1 {
   color: #727376;
   font-size: 0.8rem;
@@ -155,6 +163,7 @@ body {
 
 .transaction-container {
   width: 100%;
+  margin-top: 4vh;
 }
 
 .transaction-list {
@@ -163,6 +172,7 @@ body {
   z-index: -2;
   overflow-y: scroll;
   overflow-x: hidden;
+  /* margin-top: 4vh; */
 }
 
 .no-transaction-notice {
@@ -205,6 +215,7 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
+  margin-bottom: 4.2vh;
 }
 
 .transaction::after {
@@ -216,6 +227,7 @@ body {
   background-color: #eee;
   bottom: -1rem;
   margin: 0;
+  /* margin-bottom: 10px; */
 }
 
 .transaction-number h1,
@@ -248,11 +260,15 @@ body {
 
 .side-bar {
   background-color: #b643d5;
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 70vw;
+  width: 60vw;
   height: 100vh;
+  z-index: 101;
+  padding-left: 3vw;
+  transform: translateX(-60vw);
+  transition: transform 700ms;
 }
 
 @media screen and (max-width: 360px) {

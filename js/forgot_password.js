@@ -22,3 +22,7 @@ $(".back2-btn").click(function (e) {
   e.preventDefault();
   $(".wrap").css("transform", "translateX(0vw)");
 });
+$(".forgot-done-btn").submit(function (e) {
+  e.preventDefault();
+  window.location.href = "./login.html";
+});

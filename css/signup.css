@@ -8,10 +8,16 @@
 form {
   padding-left: 1.2rem;
   padding-right: 1.2rem;
+  margin-top: 4.9vh;
 }
 
 .text-box {
   color: #4e5053;
+  margin-top: 13vh;
+}
+.text-box h1 {
+  margin-bottom: 0;
+  font-size: 4vh;
 }
 
 .form-control {
@@ -44,7 +50,6 @@ select {
 }
 
 .signup-1 p {
-  margin: 0.5rem 0.4rem 30% 0;
   line-height: 30px;
   letter-spacing: 0.257143px;
   color: #727376;
@@ -60,7 +65,7 @@ select {
 }
 
 .sign-up-btn {
-  width: 90%;
+  width: 90vw;
   display: block;
   margin: auto;
   opacity: 0.6;
@@ -74,6 +79,9 @@ select {
     #fb72ad 0%,
     #b643d5 100%
   );
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 13.1vh;
 }
 
 .signup-3 h3 {
@@ -94,10 +102,18 @@ select {
 }
 
 .signup-3 p {
-  margin-top: 3rem;
+  margin-top: 3vh;
   margin-bottom: 30%;
   text-align: center;
   line-height: 25px;
   letter-spacing: 0.257143px;
   color: #727376;
+}
+
+input::placeholder {
+  font-size: 0.7rem !important;
+}
+
+.country-select {
+  font-size: 0.7rem;
 }

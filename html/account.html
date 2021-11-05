@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- reset -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- custom -->
+    <link rel="stylesheet" href="../css/account.css">
+    <title>account</title>
+</head>
+<body>
+
+    <div class="view">
+        <div class="wrap">
+            <div class="screen">
+                <a href="./login.html"><img id="path" src="../img/path.svg" alt="back"></a>
+                <div class="text-box">
+                    <h1>ACCOUNT</h1>
+                    <p class="description">You can check your account status here.</p>
+                </div>
+                <div class="card info">
+                    <div class="row-wrap">
+                        <div class="photo-wrap">
+                            <div id="circle">
+                                <img src="../img/user-white-icon.svg" alt="">
+                            </div>
+                            <button class="btn text-btn">change</button>
+                        </div>
+                        <div class="info-wrap">
+                            <p class="name">Harry Jame</p>
+                            <p class="contents">CLT : 123.23</p>
+                            <p class="contents">CDS : 123.23</p>
+                            <p class="contents">CDA : 123.23</p>
+                            <p class="contents">VAP : 123.23</p> 
+                        </div>
+                    </div>
+                </div>
+                <div class="card info-detail">
+                    <div class="row-wrap">
+                        <div class="category">
+                            <p>Name</p>
+                            <p>Phone</p>
+                        </div>
+                    <div class="category-contents">
+                        <p>Harry Jame</p>
+                        <p>+8210 0000 0000</p>
+                    </div>
+                        
+                    </div>
+                </div>
+                <div class="card pending-card">
+                    <div class="row-wrap">
+                        <div id="date">2021.11.01</div>
+                        <div id="price">20,000$</div>
+                        <div id="state">승인대기</div>
+                    </div>
+                    <button class="btn cancel-btn">취소</button>
+                </div>
+                <button class="btn next-btn">Delete contact</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>

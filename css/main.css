@@ -1,3 +1,7 @@
+body {
+  display: flex;
+}
+
 .profile-bar {
   padding: 1rem;
   height: 5rem;
@@ -230,4 +234,13 @@
   font-size: 0.9rem;
   float: right;
   margin-right: 1rem;
+}
+
+.side-bar {
+  background-color: #b643d5;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 70vw;
+  height: 100vh;
 }

@@ -22,7 +22,7 @@
 }
 
 .screen {
-  height: 100%;
+  height: 100vh;
   width: 100vw;
   overflow: hidden;
   float: left;
@@ -30,16 +30,13 @@
 
 .wrap_description {
   width: 300vw;
-  /* height: 80vh; */
   overflow-x: hidden;
 }
 
 .description {
   width: 100vw;
-  /* height: 100%; */
   overflow: auto;
   float: left;
-  margin-bottom: 5rem;
 }
 
 .welcome-bg {
@@ -50,29 +47,33 @@
 
 .text-box {
   color: white;
-  margin-top: 3rem;
-  margin-left: 1rem;
+  margin-top: 23.7vh;
+  margin-left: 1.5rem;
 }
 
 .text-box h1 {
-  font-size: 2rem;
+  font-size: 4vh;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .text-box h2 {
-  margin-bottom: 3rem;
+  font-size: 2vh;
+  font-weight: 500;
+  margin-bottom: 2rem;
 }
 
 .text-box p {
-  max-width: 60%;
-  line-height: 2rem;
+  max-width: 70%;
+  font-size: 2vh;
+  font-weight: 200;
+  line-height: 1.5rem;
 }
 
 .begin-btn {
   color: white;
-  margin-left: 1rem;
-  margin-top: 15rem;
+  margin-left: 1.5rem;
+  margin-top: 19.2vh;
   font-size: 1.2rem;
 }
 
@@ -83,6 +84,20 @@
 
 /* page2 */
 
+.mySwiper {
+  margin-top: 13vh;
+}
+
+.dot-box {
+  position: static;
+  margin-top: 5vh;
+}
+
+.page2 .text-box {
+  margin-top: 0;
+  margin-left: 2rem;
+}
+
 .page2 h1 {
   color: #4e5053;
 }
@@ -90,15 +105,17 @@
 .page2 img {
   display: block;
   margin: auto;
-  /* height: 30vh; */
+  margin-top: 6.2vh;
+  width: 25.7vh;
 }
 
 .page2 p {
   color: #727376;
   width: 90%;
-  margin-top: 4rem;
-  margin-left: 1rem;
-  line-height: 2rem;
+  margin-top: 7.8vh;
+  margin-left: 2rem;
+  font-size: 1.8vh;
+  line-height: 3vh;
 }
 
 .selected {
@@ -119,9 +136,8 @@
   color: white !important;
   font-weight: 700;
   font-size: 1.2rem;
-  position: absolute;
-  bottom: 1rem;
-  right: 3%;
+  margin: auto;
+  margin-top: 8.3vh;
 }
 
 .swiper-pagination-bullet-active {

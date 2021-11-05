@@ -4,9 +4,10 @@ body {
 
 .profile-bar {
   padding: 1rem;
-  height: 5rem;
+  height: 4rem;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 3.2vh;
 }
 
 .profile-img {
@@ -36,8 +37,9 @@ body {
 }
 
 .credit-card {
+  width: 85vw;
   max-width: 320px;
-  height: 11rem;
+  height: 20.4vh;
   background-image: url("../img/card_bg.png");
   background-size: cover;
   background-position: center;
@@ -60,29 +62,36 @@ body {
   font-weight: 500;
   font-size: 1.3rem;
 }
+.card-number {
+  font-size: 0.8rem !important;
+}
 .registerd-card {
   text-align: left;
   display: block;
   padding: 2rem;
 }
 .registerd-card h2 {
-  font-size: 1.1rem;
+  font-size: 1vh;
   margin-bottom: 0.5rem;
 }
 
 .registerd-card h1 {
-  font-size: 1.5rem;
+  font-size: 2.9vh;
   margin-bottom: 1rem;
 }
 
 .registerd-card h3 {
-  font-size: 0.7rem;
+  font-size: 1.2vh;
   color: #dadada;
   margin-bottom: 0.5rem;
 }
+.card-number {
+  font-size: 1.4vh !important;
+}
 
 .swiper-container {
-  overflow: visible;
+  /* overflow: visible; */
+  margin-bottom: 4.5vh;
 }
 .swiper-slide {
   opacity: 0.4;
@@ -93,6 +102,7 @@ body {
 .swiper-slide:before {
   content: "";
   position: absolute;
+  margin: auto;
   left: 0;
   right: 0;
   top: 0;
@@ -243,4 +253,22 @@ body {
   left: 0;
   width: 70vw;
   height: 100vh;
+}
+
+@media screen and (max-width: 360px) {
+  .credit-card {
+    width: 64vw;
+    height: 20.4vh;
+  }
+  .registerd-card {
+    text-align: left;
+    display: block;
+    padding: 1.2rem 0 0 2rem;
+  }
+  .swiper-slide:before {
+    width: 64vw;
+  }
+  .card-wrap {
+    width: 250px;
+  }
 }

@@ -2,28 +2,25 @@
 //  Wallet 카드 생성 부분
 let cardData = [
   {
-    wallet: "USD wallet",
+    wallet: "CLT wallet",
     money: "$12,000",
     cardNum1: 1234,
     cardNum2: 4567,
     cardNum3: 9013,
-    cardNum4: 3274,
   },
   {
-    wallet: "USD wallet",
+    wallet: "CLT wallet",
     money: "$36,000",
     cardNum1: 1234,
     cardNum2: 4567,
     cardNum3: 9013,
-    cardNum4: 3274,
   },
   {
-    wallet: "USD wallet",
+    wallet: "CLT wallet",
     money: "$88,000",
     cardNum1: 1234,
     cardNum2: 4567,
     cardNum3: 9013,
-    cardNum4: 3274,
   },
 ];
 
@@ -31,17 +28,24 @@ cardData.forEach((card) => {
   let cardComponent = `
   <div class="card-wrap swiper-slide">
     <div class="credit-card registerd-card">
-        <h2>${card.wallet}</h2>
-        <h1>${card.money}</h1>
-        <h3>Creat wallet</h3>
-        <div>
-            <span>${card.cardNum1}</span>
-            <span>${card.cardNum2}</span>
-            <span>${card.cardNum3}</span>
-            <span>${card.cardNum4}</span>
-        </div>
-    </div>
+      <h2>${card.wallet}</h2>
+      <h1>${card.money}</h1>
+      <div class=d-flex>
+          <div class="mx-2">
+              <h3 class="text-center">CDS</h3>
+              <p class="card-number">${card.cardNum1}</p>
+          </div>
+          <div class="mx-2">
+              <h3 class="text-center">CDA</h3>
+              <p class="card-number">${card.cardNum1}</p>
+          </div>
+          <div class="mx-2">
+              <h3 class="text-center">VAP</h3>
+              <p class="card-number">${card.cardNum1}</p>
+          </div>
+      </div>
   </div>
+</div>
   `;
 
   $(".cards-box").append(cardComponent);
@@ -137,7 +141,7 @@ $(".transaction-list").append(sizeBoxComponent);
 //  swiper (최하단에 위치하게 해야 동작합니다)
 var swiper = new Swiper(".swiper-container", {
   slidesPerView: "auto",
-  spaceBetween: 2,
+  spaceBetween: 1,
   centeredSlides: true,
   pagination: {
     el: ".swiper-pagination",

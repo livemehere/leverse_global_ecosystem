@@ -79,6 +79,7 @@ input::placeholder {
   bottom: 0;
   width: 100%;
   z-index: -1;
+  max-height: 33.3vh;
 }
 
 .login-page1 p {

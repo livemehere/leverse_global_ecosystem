@@ -25,6 +25,12 @@
   background-position: center;
   margin-right: 1rem;
 }
+.menu-profile-img {
+  box-sizing: content-box;
+  background-color: rgba(0, 0, 0, 0.144);
+  border-radius: 0.3rem;
+  padding: 1.5px;
+}
 
 .profile {
   display: flex;
@@ -306,14 +312,14 @@
 }
 .up-side img {
   width: 7vw;
-  height: 7vw;
+  height: 6.5vw;
   margin: 0 0.5rem;
 }
 .menu-btn-logout {
   box-sizing: content-box;
   background-color: rgba(0, 0, 0, 0.144);
   border-radius: 0.3rem;
-  padding: 4px;
+  padding: 2px;
 }
 .up-side-text {
   color: white;

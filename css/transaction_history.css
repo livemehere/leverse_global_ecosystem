@@ -1,53 +1,85 @@
+.view {
+  width: 100vw;
+  overflow: hidden;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+.wrap {
+  width: 400vw;
+  height: 100vh;
+  transition: transform 500ms;
+  overflow-x: hidden;
+}
+
+.screen {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  float: left;
+}
+
 #path {
-  margin: 5%;
-  margin-top: 6%;
+  margin-left: 7.7vw;
+  margin-top: 6.4vh;
+  height: 2.9vh;
 }
 
 .text-box {
-  padding-left: 1.6rem;
   color: #4e5053;
-  margin-left: 0;
-  margin-top: 0;
+  margin: 2.7vh 7.7vw 0 7.7vw;
+}
+
+.text-box h1 {
+  font-size: 3.9vh;
+  font-weight: 600;
+  color: #4e5053;
+  line-height: 5.5vh;
 }
 
 #clean-description {
-  padding-left: 1.6rem;
-  margin-bottom: 1.5rem;
-  color: #4e5053;
+  margin-left: 7.7vw;
+  margin-bottom: 1.9vh;
+  font-size: 1.6vh;
   line-height: 30px;
   letter-spacing: 0.3px;
-  font-size: 0.9rem;
+  color: #727376;
 }
 
 .row-wrap {
   display: flex;
   justify-content: space-between;
-  padding: 0 1.6rem;
+  padding: 0 7.7vw;
 }
 
 .search-wrap {
   position: relative;
   flex-grow: 1;
-  margin-right: 1.5rem;
+  margin-right: 4.2vw;
 }
 
 .search-wrap img {
   position: absolute;
-  left: 1rem;
-  bottom: 0.6rem;
+  left: 16px;
+  bottom: 1.4vh;
+  /* form-control 사이즈 min, max 값 정해놔서 bottom 값을 어떻게 줘야 화면이 너무 작아지거나 커졌을 때 안이상하게 할지,,, */
 }
 
 .form-control {
   width: 100%;
-  padding-left: 2.5rem;
+  height: 5.1vh;
+  min-height: 35px;
+  max-height: 45px;
+  padding-left: 40px;
   background: #ffffff;
   border: 1px solid #979797;
   border-radius: 8px;
+  font-size: 1.6vh;
 }
 
 #date {
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1.6vh;
   line-height: 30px;
   letter-spacing: 0.3px;
 
@@ -55,14 +87,19 @@
 }
 
 .clear-btn {
+  font-size: 1.6vh;
   background: none;
   border: none;
   font-weight: 600;
   line-height: 21px;
-  text-align: right;
   letter-spacing: 0.3px;
 
   color: #a0a0a0;
+}
+
+.history-header {
+  margin-top: 3.9vh;
+  margin-bottom: 1.8vh;
 }
 
 .card {
@@ -112,10 +149,10 @@
   margin: auto;
   opacity: 0.6;
   border-radius: 10px !important;
-  height: 3.2rem;
+  height: 7.4vh;
   color: white;
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 2.5vh;
   background: linear-gradient(162.1deg, #faabb2 -180.26%, #ea4b63 243.53%);
 }
 
@@ -123,6 +160,7 @@
   overflow-y: scroll;
   overflow-x: hidden;
   height: 30vh;
+  margin-bottom: 10.8vh;
 }
 
 .apply-btn {

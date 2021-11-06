@@ -15,7 +15,3 @@ $(".drop-btn").click(function () {
 $(".modal-btn").click(function () {
   $(".mymodal").hide();
 });
-
-$(".continue-btn").click(function () {
-  window.location.href = "./success.html";
-});

@@ -6,11 +6,20 @@ input::placeholder {
   color: #d0d0d0;
 }
 
+.clear-all-btn {
+  background: radial-gradient(
+    360.83% 360.83% at -62.81% -190%,
+    #fb72ad 0%,
+    #b643d5 100%
+  );
+}
+
 .wrap {
   width: 100vw;
 }
 .text-box h1 {
   margin-bottom: 0;
+  font-size: 3vh;
 }
 .ml-vw {
   margin-left: 7.7vw;
@@ -79,7 +88,7 @@ input::placeholder {
   display: flex;
   /* width: 80%; */
   flex-wrap: wrap;
-  margin-left: 7.7vw;
+  margin-left: 14vw;
   font-size: 1vw;
 }
 .money-box {

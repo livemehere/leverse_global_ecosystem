@@ -1,0 +1,44 @@
+.view {
+  overflow: auto;
+}
+
+.addr-input {
+  border: none;
+  border-bottom: 1px solid #b9b9b96c;
+  width: 70vw;
+}
+
+input::placeholder {
+  font-size: 1.4vh;
+}
+
+.clt-btn {
+  display: flex;
+  background: #ffffff;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.16);
+  border-radius: 7px;
+  width: 20vw;
+  height: 7vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5vh;
+}
+.clt-input {
+  border: none;
+  border-bottom: 1px solid #b9b9b96c;
+  width: 60vw;
+  height: 7vh;
+}
+
+.continue-btn {
+  margin-bottom: 1vh;
+}
+
+.desc-text {
+  font-size: 0.5vh;
+  margin-top: 0.5vh;
+}
+
+.sm-text {
+  font-size: 1vh;
+}

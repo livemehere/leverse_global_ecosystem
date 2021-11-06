@@ -19,5 +19,5 @@ $(".verify-phone-btn").click(function (e) {
 
 $(".step3-btn").click(function (e) {
   e.preventDefault();
-  window.location.href = "/html/login.html";
+  window.location.href = "./login.html";
 });

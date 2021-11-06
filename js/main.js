@@ -185,3 +185,23 @@ $(".menu-btn").click(function () {
   $(this).addClass("menu-btn-active");
   $(this).siblings().removeClass("menu-btn-active");
 });
+
+$(".menu-btn").click(function (e) {
+  let routeTarget = $(e.currentTarget).data("route");
+
+  if (routeTarget == "recharge") {
+    window.location.href = "./recharge.html";
+  }
+  if (routeTarget == "exchange") {
+    window.location.href = "./CLT-exchange.html";
+  }
+  if (routeTarget == "history") {
+    window.location.href = "./transaction_history.html";
+  }
+  if (routeTarget == "logout") {
+    window.location.href = "./login.html";
+  }
+  if (routeTarget == "main") {
+    window.location.href = "./main.html";
+  }
+});

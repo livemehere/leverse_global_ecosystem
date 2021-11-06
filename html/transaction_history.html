@@ -32,16 +32,15 @@
     <div class="view">
         <div class="wrap">
             <!-- transaction history 페이지 -->
-            <div class="screen forgot-pwd-1">
+            <div class="screen">
                 <a href="./main.html"><img id="path" src="../img/path.svg" alt="back"></a>
                 <div class="text-box">
-                    <h1>transaction</h1>
-                    <h1 class="mb-4">history</h1>
+                    <h1>transaction <br>history</h1>
                 </div>
                 <form>
                     <p id="clean-description">has been cleaned for 3 hours ago</p>
                     <!-- search & filter -->
-                    <div class="row-wrap mb-4">
+                    <div class="row-wrap">
                         <div class="d-flex search-wrap">
                             <input type="text" class="form-control" name="search">
                             <img src="../img/search_icon.svg" alt="">
@@ -49,15 +48,17 @@
                         <img src="../img/filter_icon.svg" alt="" class="filter-btn">
                     </div>
                     <!-- history contents -->
-                    <div class="row-wrap mb-3">
-                        <p id="date">2:00 PM 2/10/2018</p>
-                        <button class="clear-btn">Clear</button>
+                    <div class="history-header">
+                        <div class="row-wrap">
+                            <p id="date">2:00 PM 2/10/2018</p>
+                            <button class="clear-btn">Clear</button>
+                        </div>
                     </div>
                     <div class="card-box">
                        <!-- 여기에 transaction card 들이 들어갑니다 -->
                     </div>
                     
-                    <button class="btn clear-all-btn mt-5">Clear all history</button>
+                    <button class="btn clear-all-btn">Clear all history</button>
                 </form>
         </div>
         <!-- 필터 페이지 -->
@@ -85,7 +86,7 @@
                     <div class="ms-3">$10</div>
                     <div class="me-3">over $10,000</div>
                 </div>
-                <button class="btn apply-btn apply-btn mt-5">Apply</button>
+                <button class="btn apply-btn">Apply</button>
             </div>
         </div>
     </div>

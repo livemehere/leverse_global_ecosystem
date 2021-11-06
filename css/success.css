@@ -1,0 +1,102 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.view {
+  width: 100vw;
+  overflow: hidden;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+.wrap {
+  /* width 100당 옆으로 슬라이드되는 화면 갯수  */
+  width: 200vw;
+  height: 100%;
+
+  transition: transform 500ms;
+  position: relative;
+}
+
+.screen {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  float: left;
+}
+
+#path {
+  margin-left: 7.7vw;
+  margin-top: 6.4vh;
+  height: 2.9vh;
+}
+
+.text-box {
+  color: #4e5053;
+  margin: 2.7vh 7.7vw 0 7.7vw;
+}
+
+.text-box h1 {
+  font-size: 3.9vh;
+  font-weight: 600;
+  color: #4e5053;
+  line-height: 5.5vh;
+  margin-bottom: 11.4vh;
+}
+
+.contents {
+  margin: 0 7.7vw;
+  width: 85%;
+  text-align: center;
+}
+
+#illustration {
+  height: 20.9vh;
+  width: 69.3vw;
+  margin-bottom: 7.2vh;
+}
+
+.contents p {
+  font-weight: 600;
+  font-size: 1.8vh;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.24px;
+  color: #727376;
+}
+
+.contents .sub-description {
+  margin-top: 0.4vh;
+  font-weight: normal;
+  font-size: 1.6vh;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.3px;
+
+  color: #b9b9b9;
+}
+
+.home-btn {
+  margin-top: 10.2vh !important;
+  width: 85%;
+  display: block;
+  margin: auto;
+  border-radius: 10px !important;
+  height: 3.2rem;
+  color: white;
+  font-weight: 600;
+  font-size: 2.5vh;
+  background: radial-gradient(
+    360.83% 360.83% at -62.81% -190%,
+    #fb72ad 0%,
+    #b643d5 100%
+  );
+}

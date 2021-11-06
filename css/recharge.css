@@ -1,0 +1,120 @@
+* {
+  color: #4e5053;
+  font-size: 1vh;
+}
+input::placeholder {
+  color: #d0d0d0;
+}
+
+.wrap {
+  width: 100vw;
+}
+.text-box h1 {
+  margin-bottom: 0;
+}
+.ml-vw {
+  margin-left: 7.7vw;
+}
+
+.menu-dropdown {
+  margin-left: 7.7vw;
+}
+
+.drop-box {
+  display: none;
+  background-color: #fff;
+  border: 1px solid rgb(196, 196, 196);
+  padding: 0.5rem;
+  color: #868686;
+  border-radius: 0.3rem;
+}
+
+.drop-btn {
+  color: #868686;
+}
+.drop-btn img {
+  transform: rotate(180deg);
+  transition: all 0.3s;
+}
+.drop-item {
+  font-size: 2vh;
+}
+
+.number-input {
+  margin-left: 7.7vw;
+  border: none;
+  border-bottom: 1px solid rgb(202, 202, 202);
+  width: 85vw;
+  height: 2.5rem;
+  font-size: 0.8rem;
+}
+.modal-btn-wrap {
+  height: 25%;
+  display: flex;
+  border-top: 1px solid rgb(202, 202, 202);
+}
+.ask-box div {
+  color: rgb(151, 151, 151);
+}
+.modal-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5rem;
+}
+.modal-btn:nth-child(1) {
+  border-right: 1px solid rgb(202, 202, 202);
+}
+.modal-ask-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75%;
+  font-size: 0.5rem;
+}
+
+.select-money {
+  display: flex;
+  /* width: 80%; */
+  flex-wrap: wrap;
+  margin-left: 7.7vw;
+  font-size: 1vw;
+}
+.money-box {
+  padding: 0.7rem;
+  background: #ffffff;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.16);
+  border-radius: 7px;
+  margin-right: 1rem;
+  width: 16vw;
+  text-align: center;
+}
+.continue-btn {
+  position: absolute;
+  width: 90%;
+  bottom: 0;
+  margin-left: 5vw;
+  margin-bottom: 15vh;
+}
+
+.wallet-card {
+  font-size: 1.8vh;
+  margin-left: 7.7vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #727376;
+  width: 80%;
+  height: 9vh;
+  background: #ffffff;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+@media screen and (max-height: 732px) {
+  .continue-btn {
+    margin-bottom: 5vh;
+  }
+}

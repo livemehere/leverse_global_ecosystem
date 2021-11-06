@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- reset -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- custom -->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/transaction_history.css">
+    <link rel="stylesheet" href="../css/recharge.css">
+    <title>Recharge</title>
+</head>
+<body>
+    <div class="mymodal ask-again">
+        <div class="ask-box">
+            <div class="modal-ask-box">
+                <div class="mb-3">You haven't JPY wallet,</div>
+                <div>create now</div>
+            </div>
+            <div class="modal-btn-wrap">
+                <div class="modal-btn">Create</div>
+                <div class="modal-btn">Cancel</div>
+            </div>
+        </div>
+    </div>
+    <div class="view">
+        <div class="wrap">
+            <!-- Recharge 페이지 -->
+            <div class="screen forgot-pwd-1">
+                <a href="./main.html"><img id="path" src="../img/path.svg" alt="back"></a>
+                <div class="text-box">
+                    <h1>Recharge</h1>
+                    <h1 class="mb-4">contents</h1>
+                </div>
+                <div class="menu-dropdown">
+                    <div class="drop-btn">Recharge <img src="../img/Icon/Outline/Low.svg" alt="" width="10"></div>
+                    <div class="drop-box position-absolute">
+                        <div class="drop-item mb-4">Development</div>
+                        <div class="drop-item mb-4">CLT Exchange</div>
+                        <div class="drop-item mb-4">VAP Exchange</div>
+                        <div class="drop-item ">Termination</div>
+                    </div>
+                </div>
+                <div class='mt-4 ml-vw'>My CLT wallet</div>
+                <div class="wallet-card mt-4">
+                    <div class="ms-3">CLT wallet</div> 
+                </div>
+                <div class='mt-4 ml-vw'>Amount</div>
+                <input type="text" class="number-input mt-4" placeholder="Number">
+                <div class="select-money mt-3">
+                    <div class="money-box">$10</div>
+                    <div class="money-box">$100</div>
+                    <div class="money-box">$200</div>
+                </div>
+                <button class="btn clear-all-btn continue-btn">Continue</button>
+
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/transaction_history.js"></script>
+    <script src="../js/mobileView.js"></script>
+    <script src="../js/recharge.js"></script>
+</body>
+</html>

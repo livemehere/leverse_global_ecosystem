@@ -163,13 +163,25 @@ $(".setting-btn").click(function () {
   isSidebarOpen = true;
 });
 
-const sideBarViewPort = document.querySelector(".side-bar");
+const sideBarViewPort = document.querySelector(".when-sidebar-open");
 
 let mc = new Hammer(sideBarViewPort);
 mc.on("panleft panright tap press", (ev) => {
-  if (isSidebarOpen == true && ev.deltaX < -50) {
+  if (isSidebarOpen == true && ev.deltaX < -150) {
     $(".side-bar").css("transform", "translateX(-60vw)");
     $(".view").css("transform", "translateX(0vw)");
+    $(".view").css("overflow", "hidden");
     isSidebarOpen = false;
   }
+});
+
+$(window).on("scroll", () => {
+  if ((isSidebarOpen = false)) {
+    $(".view").css("overflow", "auto");
+  }
+});
+
+$(".menu-btn").click(function () {
+  $(this).addClass("menu-btn-active");
+  $(this).siblings().removeClass("menu-btn-active");
 });

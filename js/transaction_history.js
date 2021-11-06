@@ -81,3 +81,7 @@ $(".cancel-btn").click(function () {
 $(".clear-btn").click(function () {
   $(".mymodal").css("display", "none");
 });
+
+$("form").click(function (e) {
+  e.preventDefault();
+});

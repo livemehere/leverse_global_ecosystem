@@ -43,6 +43,7 @@ input::placeholder {
   position: absolute;
   right: 5vw;
   bottom: 0.6rem;
+  z-index: 1000;
 }
 
 .forgot-btn {

@@ -26,3 +26,25 @@ $(".forgot-done-btn").submit(function (e) {
   e.preventDefault();
   window.location.href = "./login.html";
 });
+
+// password 보이는 여부 버튼
+
+$(".new-password").click(function () {
+  var x = document.querySelector(".new-pwd-input");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+});
+
+// password 보이는 여부 버튼
+
+$(".confirm-password").click(function () {
+  var x = document.querySelector(".confirm-pwd-input");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+});

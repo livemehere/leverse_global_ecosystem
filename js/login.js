@@ -14,3 +14,14 @@ a &&
     },
     !1
   );
+
+// password 보이는 여부 버튼
+
+$(".password-toggle").click(function () {
+  var x = document.querySelector(".password-input");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+});

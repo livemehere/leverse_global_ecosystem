@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- reset -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- custom -->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Main</title>
+</head>
+<body>
+    <div class="when-sidebar-open">
+        <div class="side-bar">
+        </div>
+        <div class="view">
+            <div class="profile-bar">
+                <div class="profile">
+                    <div class="profile-img" style="background-image: url('../img/User.svg')"></div>
+                    <div class="profile-text">
+                        <h1 class="mb-2 user-name">Hi,Lee !</h1>
+                        <p>Welcome back</p>
+                    </div>
+                </div>
+                <div class="menu-wrap me-3 mt-2">
+                    <img src="../img/qr.svg" alt="" class="me-2">
+                    <img src="../img/setting_btn.svg" alt="" class="setting-btn">
+                </div>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper cards-box">
+                    <div class="card-wrap swiper-slide">
+                        <div class="credit-card" id="create-card-btn">
+                            <img src="../img/plus_btn.svg" alt="" class="mb-3">
+                            <p>Creat Wallet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="function-container"> 
+                <h1 class="ms-3">Functions</h1>
+                <div class="function-card-box">
+                    <div class="function-card">
+                        <img src="../img/Function/Recharge.png" alt="" >
+                        <h1 class="mt-2">Development</h1>
+                        <h2 class="mt-1" >Contents</h2>
+                    </div>
+                    <div class="function-card">
+                        <img src="../img/Function/Transfer.png" alt="" >
+                        <h1 class="mt-2">Recharge</h1>
+                        <h2 class="mt-1" >Contents</h2>
+                    </div>
+                    <div class="function-card">
+                        <img src="../img/Function/Exchange.png" alt="" >
+                        <h1 class="mt-2">Exchange</h1>
+                        <h2 class="mt-1" >Contents</h2>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="transaction-container">
+                <h1 class="ms-3 mb-3">Recent transactions <span class="more-btn"><a href="./transaction_history.html">more</a></span></h1>
+                <div class="transaction-list">
+                    <div class="no-transaction-notice mt-5">
+                        <img src="../img/paper.svg" alt="" >
+                        <h1 class="mt-2">No transactions</h1>
+                        <h2 class="mt-1">Let’s get started</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-nav">
+                <div class="icon nav-selected">
+                    <img src="../img/nav-home.svg" alt="">
+                </div>
+                <div class="icon">
+                    <img src="../img/nav-gift.svg" alt="">
+                </div>
+                <div class="icon">
+                    <img src="../img/nav-list.svg" alt="">
+                </div>
+                <div class="icon">
+                    <img src="../img/nav-chain.svg" alt="">
+                </div>
+                <div class="icon">
+                    <img src="../img/nav-rank.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/mobileView.js"></script>
+    <script src="../js/hammer.js"></script>
+    <script src="../js/main-default.js"></script>
+</body>
+</html>

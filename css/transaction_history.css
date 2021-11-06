@@ -97,14 +97,25 @@
   color: #a0a0a0;
 }
 
+.cancel-btn {
+  font-size: 1.6vh;
+  background: none;
+  border: none;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0.3px;
+
+  color: #a0a0a0;
+}
+
 .history-header {
   margin-top: 3.9vh;
   margin-bottom: 1.8vh;
 }
 
 .card {
-  margin: 0 1.6rem;
-  margin-bottom: 0.8rem;
+  margin: 0 7.7vw;
+  margin-bottom: 1.8vh;
   /* padding: 0.8rem 0 0.8rem 0.3rem; */
   background: #ffffff;
   box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.15);
@@ -164,6 +175,11 @@
 }
 
 .apply-btn {
+  margin-top: 12.5vh !important;
+  height: 7.4vh;
+  color: white;
+  font-weight: 600;
+  font-size: 2.5vh;
   background: radial-gradient(
     360.83% 360.83% at -62.81% -190%,
     #fb72ad 0%,

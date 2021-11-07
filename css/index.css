@@ -31,6 +31,7 @@ a {
   width: 100vw;
   overflow: hidden;
   float: left;
+  position: relative;
 }
 
 .wrap_description {
@@ -44,8 +45,55 @@ a {
   float: left;
 }
 
+.bubble-bg {
+  background: linear-gradient(
+    321.93deg,
+    rgba(255, 255, 255, 0.6) -64.3%,
+    rgba(255, 255, 255, 6e-5) 62.54%
+  );
+  width: 306px;
+  height: 306px;
+  border-radius: 50%;
+  position: absolute;
+  top: -3rem;
+  left: -3rem;
+}
+.down-bubble {
+  background: linear-gradient(
+    321.93deg,
+    rgba(255, 255, 255, 0.6) -64.3%,
+    rgba(255, 255, 255, 6e-5) 62.54%
+  );
+  transform: rotate(-180deg);
+  width: 306px;
+  height: 306px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -5rem;
+  right: -8rem;
+}
+.down-bubble-small {
+  background: linear-gradient(
+    321.93deg,
+    rgba(255, 255, 255, 0.6) -64.3%,
+    rgba(255, 255, 255, 6e-5) 62.54%
+  );
+  transform: rotate(-180deg);
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 9rem;
+  right: 6rem;
+}
+
 .welcome-bg {
-  background-image: url("../img/welcome_bg.png");
+  /* background-image: url("../img/welcome_bg.png"); */
+  background: radial-gradient(
+    130.36% 130.36% at -4% 4.18%,
+    #8c1bab 0%,
+    #f761a1 100%
+  );
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -80,9 +80,9 @@ input::placeholder {
 .login-bg {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   z-index: -1;
-  max-height: 28.3vh;
+  /* max-height: 28.3vh; */
 }
 
 .login-page1 p {

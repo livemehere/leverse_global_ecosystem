@@ -131,7 +131,59 @@ transactionData.forEach((transaction) => {
 });
 ```
 
-테스트
-2
-3
-4
+---
+
+# 완성 후 피드백 적용 사항
+
+### main.js 의 사이드바 메뉴
+
+```js
+// 메뉴바
+let isSidebarOpen = false;
+$(".setting-btn").click(function () {
+  $(".side-bar").css("transform", "translateX(0vw)");
+  $(".view").css("transform", "translateX(60vw)");
+  isSidebarOpen = true;
+});
+
+//  사이드 메뉴바가 닫기는 방식은 2가지입니다.
+//  1. 슬라이드를 왼쪽으로하거나
+//  2. 사이드바의 우측하단에 위치한 닫기 버튼을 누르시면 됩니다.
+const sideBarViewPort = document.querySelector(".when-sidebar-open");
+let mc = new Hammer(sideBarViewPort);
+mc.on("panleft panright tap press", (ev) => {
+  if (isSidebarOpen == true && ev.deltaX < -150) {
+    $(".side-bar").css("transform", "translateX(-60vw)");
+    $(".view").css("transform", "translateX(0vw)");
+    $(".view").css("overflow", "hidden");
+    isSidebarOpen = false;
+  }
+});
+
+//  닫는 버튼 추가 하였습니다
+$(".sidebar-close-btn").click(function () {
+  $(".side-bar").css("transform", "translateX(-60vw)");
+  $(".view").css("transform", "translateX(0vw)");
+});
+```
+
+### main.html 하단 아이콘 변경
+
+- 적절한 아이콘으로 변경하였습니다
+- functions 박스에있는 Recharge 아이콘도 변경
+- 사이드바 메뉴에서도 아이콘 변경사항 적용
+
+## 배경수정
+
+> 어떤아이콘은 정상적으로 보이는반면, 간혹 어떤아이콘은 img 태그로 동작하지 않는 버그가 발생하여, 해당 부분들만 svg태그로 변경하였습니다
+
+- index.html 에 배경을 요구사항에 맞게 변경
+- login.html 하단의 웨이브 배경도 요구사항에 맞게 변경
+
+## 텍스트 변경
+
+- index.html 텍스트 변경
+
+## main.html default 아이콘 변경
+
+- 좌측상단 사용자의 프로필 사진 default를 적절히 변경

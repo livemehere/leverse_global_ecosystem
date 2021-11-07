@@ -356,6 +356,11 @@
 .down-side h2 {
   font-size: 2vw;
 }
+.sidebar-close-btn {
+  position: absolute;
+  bottom: 2vh;
+  right: 4vw;
+}
 
 @media screen and (max-width: 360px) {
   .credit-card {

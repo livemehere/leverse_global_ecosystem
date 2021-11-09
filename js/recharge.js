@@ -20,3 +20,27 @@ $(".loading").css("display", "flex"); // 로딩바 보이기
 setTimeout(function () {
   $(".loading").css("display", "none"); // 로딩바 숨기기
 }, 500);
+
+$(".drop-item").click(function (e) {
+  console.log(e.target.innerHTML);
+  let routeTarget = e.target.innerHTML;
+
+  if (routeTarget == "Development") {
+    window.location.href = "./development.html";
+  }
+  if (routeTarget == "CLT Exchange") {
+    window.location.href = "./CLT-exchange.html";
+  }
+  if (routeTarget == "VAP Exchange") {
+    window.location.href = "./CLT-exchange.html";
+  }
+  if (routeTarget == "Termination") {
+    window.location.href = "./termination.html";
+  }
+  if (routeTarget == "logout") {
+    window.location.href = "./login.html";
+  }
+  if (routeTarget == "main") {
+    window.location.href = "./main.html";
+  }
+});

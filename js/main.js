@@ -178,7 +178,7 @@ mc.on("panleft panright tap press", (ev) => {
 });
 
 //  닫는 버튼 추가 하였습니다
-$(".sidebar-close-btn").click(function () {
+$(".menu-btn-close").click(function () {
   $(".side-bar").css("transform", "translateX(-60vw)");
   $(".view").css("transform", "translateX(0vw)");
 });
@@ -200,6 +200,9 @@ $(".menu-btn").click(function (e) {
   if (routeTarget == "recharge") {
     window.location.href = "./recharge.html";
   }
+  if (routeTarget == "account") {
+    window.location.href = "./account.html";
+  }
   if (routeTarget == "exchange") {
     window.location.href = "./CLT-exchange.html";
   }
@@ -213,3 +216,13 @@ $(".menu-btn").click(function (e) {
     window.location.href = "./main.html";
   }
 });
+
+$(".icon").click(function (e) {
+  $(this).siblings().removeClass("nav-selected");
+  $(this).addClass("nav-selected");
+});
+
+$(".loading").css("display", "flex"); // 로딩바 보이기
+setTimeout(function () {
+  $(".loading").css("display", "none"); // 로딩바 숨기기
+}, 500);

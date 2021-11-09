@@ -7,8 +7,28 @@ a:hover {
   color: #a0a0a0;
 }
 
+.login-input {
+  display: block;
+  width: 90%;
+  padding: 0.375 rem 0.75 rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: none;
+  border-bottom: 1px solid #eee;
+  border-radius: 0.25 rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
 input::placeholder {
   color: #d0d0d0 !important;
+  font-size: 0.8rem;
+}
+input:focus {
+  outline: none;
 }
 
 .login-page1 {
@@ -39,7 +59,7 @@ input::placeholder {
   position: relative;
 }
 
-.password-wrap img {
+.password-wrap svg {
   position: absolute;
   right: 5vw;
   bottom: 0.6rem;
@@ -117,8 +137,4 @@ footer {
 .login-page1 footer p {
   z-index: 10;
   color: white;
-}
-
-input::placeholder {
-  font-size: 0.8rem;
 }

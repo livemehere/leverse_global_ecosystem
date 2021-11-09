@@ -343,11 +343,12 @@
   height: 6.5vw;
   margin: 0 0.5rem;
 }
-.menu-btn-logout {
+.menu-btn-close {
   box-sizing: content-box;
-  background-color: rgba(0, 0, 0, 0.144);
+  /* background-color: rgba(0, 0, 0, 0.144); */
   border-radius: 0.3rem;
   padding: 2px;
+  margin-left: 5vw;
 }
 .up-side-text {
   color: white;

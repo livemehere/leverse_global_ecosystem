@@ -21,7 +21,9 @@ $(".password-toggle").click(function () {
   var x = document.querySelector(".password-input");
   if (x.type === "password") {
     x.type = "text";
+    $(".password-toggle path").attr("fill", "#b9b9b95e");
   } else {
     x.type = "password";
+    $(".password-toggle path").attr("fill", "#B9B9B9");
   }
 });

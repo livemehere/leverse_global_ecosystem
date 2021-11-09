@@ -187,3 +187,16 @@ $(".sidebar-close-btn").click(function () {
 ## main.html default 아이콘 변경
 
 - 좌측상단 사용자의 프로필 사진 default를 적절히 변경
+
+## 로딩바
+
+```js
+$(".loading").css("display", "flex"); // 로딩바 보이기
+setTimeout(function () {
+  $(".loading").css("display", "none"); // 로딩바 숨기기
+}, 1000);
+```
+
+- 위 코드는 로딩바를 처리하는 예시입니다. 로딩은 하나의 <div>요소입니다. display를 조작해주시면 됩니다.
+- ajax 요청의 말단에 display를 none으로 변경해주시면 됩니다.
+- dom 요소를 조작하여, 동적으로 데이터를 입력하는 페이지에만 로딩바가 들어가있습니다.(더 필요하신페이지에는 <div class="loading"><div/>태그를 screen태그의 최상단에 위치시키고, css를 해당 html에 적용되도록 추가해주시면됩니다.)

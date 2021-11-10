@@ -318,7 +318,15 @@
   margin: 0.3rem 0;
   width: 93%;
   border-radius: 0.6rem;
-  justify-content: space-between;
+  position: relative;
+  justify-content: flex-start;
+}
+
+.right-sign {
+  position: absolute;
+  right: 0;
+  width: 10vw;
+  margin-top: 0.2rem;
 }
 
 .menu-btn:hover {
@@ -336,6 +344,7 @@
 .up-side {
   display: flex;
   padding: 0;
+  position: relative;
   /* justify-content: space-between; */
 }
 .up-side img {
@@ -349,6 +358,9 @@
   border-radius: 0.3rem;
   padding: 2px;
   margin-left: 5vw;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .up-side-text {
   color: white;
@@ -363,7 +375,7 @@
 }
 .menu-text {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   color: white;
   font-size: calc(10px + 1vw);

@@ -15,6 +15,7 @@
     <!-- custom -->
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/transaction_history.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />
     <title>transaction history</title>
 </head>
 <body>
@@ -43,8 +44,8 @@
                     <!-- search & filter -->
                     <div class="row-wrap">
                         <div class="d-flex search-wrap">
-                            <input type="text" class="form-control" name="search">
-                            <img src="../img/search_icon.svg" alt="">
+                            <input type="text" class="form-control" name="search" id="search-input">
+                            <img src="../img/search_icon.svg" alt="" id="search-input-icon">
                         </div>
                         <img src="../img/filter_icon.svg" alt="" class="filter-btn">
                     </div>
@@ -71,28 +72,39 @@
                 </div>
                 <p id="clean-description">From date</p>
                 <div class="card filter-card">
-                    <p class="from-date">12/02/2018</p>
-                    <img src="../img/Calender.svg" alt="" style="width:1.3rem">
+                    <input readonly type="text" id="from-date" placeholder="" class="picker">
+                    <!-- <input type="text" class="picker"> -->
+                    <label for="from-date" class="d-flex"><img src="../img/Calender.svg" alt="" style="width:1.3rem" class='picker'></label>
                 </div>
 
                 <p id="clean-description">To date</p>
                 <div class="card filter-card">
-                    <p class="from-date">12/02/2018</p>
-                    <img src="../img/Calender.svg" alt="" style="width:1.3rem">
+                    <input readonly type="text" id="to-date" placeholder="" class="picker">
+                    <label for="to-date" class="d-flex"><img src="../img/Calender.svg" alt="" style="width:1.3rem" class='picker'></label>
                 </div>
                 <p id="clean-description">Amount of money</p>
-                <input type="range" class="form-range" id="money-rage" min="10" max="10000">
-                <div class="rage-text mt-2">
-                    <div class="ms-3">$10</div>
-                    <div class="me-3">over $10,000</div>
+                <div class="range-control">
+                    <!-- <div class="range-value" id="rangeV">2</div> -->
+                    <div class="rangeV">2</div>
+                    <input type="range" class="form-range" id="inputRange" min="10" max="10000" step="10" data-thumbwidth="20">
+                    <div class="rage-text mt-2">
+                        <div class="ms-3">$10</div>
+                        <div class="me-3">over $10,000</div>
+                    </div>
                 </div>
                 <button class="btn apply-btn">Apply</button>
             </div>
         </div>
     </div>
+
     <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/rolldate.min.js"></script>
     <script src="../js/transaction_history.js"></script>
-    <!-- <script src="../js/mobileView.js"></script> -->
+    <script>
+
+    </script>
 </body>
 </html>

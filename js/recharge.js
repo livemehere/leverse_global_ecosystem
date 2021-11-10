@@ -44,3 +44,10 @@ $(".drop-item").click(function (e) {
     window.location.href = "./main.html";
   }
 });
+
+// document.querySelector(".select-money")
+document.querySelector(".select-money").addEventListener("click", function (e) {
+  console.log(e.target.dataset.money);
+  let selectedMoney = e.target.dataset.money;
+  $(".number-input").val(selectedMoney);
+});

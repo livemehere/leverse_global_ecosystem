@@ -30,7 +30,7 @@ input[type="text"] {
   /* border-bottom: 1px solid rgb(182, 182, 182); */
   width: 100%;
 }
-.range-control {
+.range-wrap {
   position: relative;
 }
 input[type="range"]::-webkit-slider-runnable-track {
@@ -281,7 +281,7 @@ input[type="range"]:active + output {
   flex-direction: row;
 }
 
-#inputRange {
+#range {
   display: block;
   width: 90%;
   margin: auto;
@@ -375,8 +375,11 @@ input[type="range"]::after {
 .search-wrap:hover #search-input-icon {
   display: none !important;
 }
-.rangeV {
-  margin-left: 44vw;
-  width: 3rem;
-  text-align: center;
+.range-value {
+  position: absolute;
+  top: -30%;
+  transform: translate(-50%, 0);
+  font-weight: 600;
+  color: #4e5053;
+  font-size: 2vh;
 }

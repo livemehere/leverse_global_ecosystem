@@ -21,3 +21,9 @@ $(".step3-btn").click(function (e) {
   e.preventDefault();
   window.location.href = "./login.html";
 });
+
+$(".country-select").on("input", (e) => {
+  let flagUrl = $("option:selected").data("flag");
+  // console.log($("option:selected").data("flag"));
+  $(".ct-flag").attr("src", flagUrl);
+});

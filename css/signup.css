@@ -55,6 +55,10 @@ form {
   border-bottom: 1px solid #b9b9b96c;
 }
 
+.ct-flag {
+  width: 2rem;
+}
+
 .form-control::placeholder {
   color: #d0d0d0;
   font-size: 0.9rem;
@@ -62,10 +66,10 @@ form {
 
 .phone-wrap {
   display: flex;
+  /* height: 30px; */
 }
 
 .phone-wrap img {
-  border-bottom: 1px solid #b9b9b96c;
 }
 
 select {
